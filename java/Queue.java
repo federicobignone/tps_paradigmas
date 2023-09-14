@@ -1,7 +1,10 @@
 package queue;
 import java.util.ArrayList;
+
+
+
 public class Queue {
-	private ArrayList<Object> items;
+	private ArrayList<Contenedor> items;
 
 	public Queue() {
 		this.items = new ArrayList<>();
@@ -11,30 +14,22 @@ public class Queue {
 		return this.items.isEmpty();
 	}
 
-	public Queue add( Object  cargo ) {
+	public Queue add( Contenedor cargo) {
 		this.items.add(cargo);
 		return this;
 	}
 
 	public Object take() {
-		if (this.items.isEmpty()) {
-			throw new Error("Queue is empty");
-		} else {
-			Object item = this.items.remove(0);
-			return item;
-		}
+		return null;
 	}
 
+
 	public Object head() {
-		if (this.items.isEmpty()) {
-			throw new Error("Queue is empty");
-		} else {
-			return this.items.get(0);
-		}
+		return null;
 	}
 
 	public int size() {
-		return this.items.size();
+		return this.items.size()-1;
 	}
 
 }
