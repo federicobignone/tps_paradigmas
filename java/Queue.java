@@ -13,22 +13,22 @@ public class Queue {
     }
 
     public boolean isEmpty() {
-        return items.isEmpty();
+        return items.size() == 1;
     }
 
     public Queue add(Object cargo) {
-        items.add(1, new NotEmpty());
+        items.add(1, new NotEmpty(cargo));
         return this;
 
     }
 
     public Object take() {
-        return null;
+        return items.remove(size()).Contenido();
     }
 
 
     public Object head() {
-        return null;
+        return items.get(size()).Contenido();
     }
 
     public int size() {
