@@ -5,11 +5,11 @@ public class Empty extends Contenedor {
         return true;
     }
 
-    public boolean take() {
+    public Object take() {
         throw new Error("Queue is empty");
     }
 
-    public boolean head() {
+    public Object head() {
         throw new Error("Queue is empty");
     }
 

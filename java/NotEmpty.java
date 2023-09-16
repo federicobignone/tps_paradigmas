@@ -1,16 +1,18 @@
 package queue;
 
 public class NotEmpty extends Contenedor {
+
+    private Object cargo;
+
     public boolean isEmpty() {
         return false;
     }
 
-    public boolean head() {
-        return this.items.get(1);
+    public Object head() {
+        return this.items(1);
     }
 
-    public boolean take() {
-        Object item = this.items.remove(1);
-        return item;
+    public Object take() {
+        return items.remove(1);
     }
 }
