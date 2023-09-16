@@ -1,30 +1,38 @@
 package queue;
+import java.util.ArrayList;
+
+
 
 public class Queue {
 
-  public boolean isEmpty() {
-		// TODO Auto-generated method stub
-		return true;
-	}
+    public ArrayList<Contenedor> items = new ArrayList<>();
 
-	public Queue add( Object  cargo ) {
-		// TODO Auto-generated method stub
-		return this;
-	}
 
-	public Object take() {
-    // TODO Auto-generated method stub
-		return null;
-	}
+    public Queue() {
+        items.add(new Empty());
+    }
 
-	public Object head() {
-		// TODO Auto-generated method stub
-    return null;
-	}
+    public boolean isEmpty() {
+        return items.isEmpty();
+    }
 
-	public int size() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+    public Queue add(Object cargo) {
+        items.add(1, new NotEmpty());
+        return this;
+
+    }
+
+    public Object take() {
+        return null;
+    }
+
+
+    public Object head() {
+        return null;
+    }
+
+    public int size() {
+        return this.items.size()-1;
+    }
 
 }
