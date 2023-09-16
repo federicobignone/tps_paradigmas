@@ -2,8 +2,6 @@ package queue;
 
 public class NotEmpty extends Contenedor {
 
-    private Object cargo;
-
     public boolean isEmpty() {
         return false;
     }
