@@ -1,9 +1,7 @@
 package submarino;
 
 public class nemo {
-    private int x = 0;
-    private int y = 0;
-    private int z = 0;
+
     private String direccion = "NORTE";
 
     public String posicionActual() {
@@ -13,10 +11,10 @@ public class nemo {
     public String direccionActual() {
         return direccion;
     }
-    public void Mover(String movimientos) {}
+    public void Comando(String movimientos) {}
 
 
-    public String Mover(Character movimientos) {
+    public String Comando(Character movimientos) {
         if (movimientos.equals('m')) {
             if (y>=-1){
                 return "Nemo libera la cápsula";
