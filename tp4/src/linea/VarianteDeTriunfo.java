@@ -1,11 +1,9 @@
 package linea;
 
-import java.util.ArrayList;
 
 public abstract class VarianteDeTriunfo {
-    public boolean hayLinea(ArrayList<ArrayList<Character>> tablero) {
-        return false;
-    }
 
+    public abstract boolean elejirModo(char variante);
 
+    public abstract boolean metodoDeTriunfo(Linea linea, char position);
 }

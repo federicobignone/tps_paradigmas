@@ -7,9 +7,8 @@ public class TurnoAzul extends Turno{
 
     }
 
-
     public void playBlueAt(Linea linea, int position) {
-
+        linea.addToken(position, '0');
 
     }
     public Turno nextTurn() {
